@@ -4,19 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="main.css">
+    <!-- link to stylesheet goes here -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #EEEEFA;
+            font-family: sans-serif;
+        }
+
+        .hero-container {
+            height: 739px;
+            background: url(multimedia/Hero-banner.svg); /* Background color for the hero banner */
+            display: flex;
+            align-items: center;
+            padding: 200px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            color: #fff;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+        .icon {
+            display: flex;
+            align-items: flex-start;
+            margin: 0 10px;
+            gap: 4px;
+        }
+        .icon i {
+            font-size: 2em;
+            color: #9896F0;
+        }
+        .icon span {
+            display: flex;
+            font-size: 0.8em;
+            color: #fff;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo"><a href="index.html"><img src="multimedia/Logo-White.svg" alt="logo"></a></div>
-            <ul>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="connect.html">Connect</a></li>
+    <header><!--This is the navigation bar -->
+            <nav class="navbar bg-body-tertiary">
+                <div class="container">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="multimedia/Logo - Black.svg" alt="logo" width="60" height="48">
+                  </a>
+
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="works.html">Works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="about.html">About Me</a>
+                </li>
+                <ul class="nav nav-pills"><li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contact.html">Connect</a>
+                </li></ul>
             </ul>
         </nav> 
+
+        <div class="hero-container"><!-- This is the Hero banner -->
+            <div class="hero-content"><!-- This is the Hero content -->
+                <h1 class="display-3">DAX KAREEM DOCTORA</h1>
+                <p><em><strong>Creating Interfaces</strong>, Building Products, Helping People Along The Way.</em></p>
+                <div class="icons">
+                    <div class="icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="4" width="16" height="16" rx="2" fill="#9896F0"/>
+                        </svg>
+                        <span>Product Designer</span>
+                    </div>
+                    <div class="icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="4" width="16" height="16" rx="2" fill="#9896F0"/>
+                        </svg>
+                        <span>Adventure Junkie</span>
+                    </div>
+                    <div class="icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="4" width="16" height="16" rx="2" fill="#9896F0"/>
+                    </svg>
+                    <span>Outdoor Enthusiast</span>
+            </div>      
+        </div>
+
     
+    </header>
+
 </body>
 </html>
