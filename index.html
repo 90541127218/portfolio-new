@@ -7,6 +7,7 @@
     <!-- link to stylesheet goes here -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
+
         body {
             background-color: #EEEEFA;
             font-family: sans-serif;
@@ -43,6 +44,38 @@
             font-size: 0.8em;
             color: #fff;
             align-items: center;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            padding: 24px;
+            gap: 32px;
+        }
+
+        article {
+            padding: 24px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 20px 60px;
+            background-color: #9896F0;
+            color: #fff;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 30px;
+        }
+
+        .social-links img {
+            transform: scale(1.2); /* scale the image down to 50% of its original size */
         }
     </style>
 </head>
@@ -92,9 +125,93 @@
                     <span>Outdoor Enthusiast</span>
             </div>      
         </div>
-
-    
     </header>
+
+    <section>
+      <div class="card" style="width: 60rem;">
+            <img src="multimedia/Pic.png" class="card-img-top" alt="image">
+                <div class="card-body">
+                <h3 class="card-title">About Me</h3>
+                <p class="card-text">I like creating and designing things that have a purpose. I always thought of design as a problem-solving approach that satisfies the client and myself. Recently, I've been made aware of the butterfly affect of designing and being responsible for the experience of many people. It's us designers that tend to shape the world and leave a mark and I care a lot about the impact of my design to humanity.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">450+ Project Completed</li>
+                <li class="list-group-item">23 Brands</li>
+            </ul>
+      </div>
+    </section>
+
+    <div>  
+        
+    </div>
+
+    <article class="d-flex flex-column mb-3">
+        <h2>What I Offer</h2>
+        <div class="d-flex align-items-center">
+            <div class="flex-shrink-0">
+              <img src="multimedia/Vector1.png" alt="UX">
+            </div>
+            <div class="flex-grow-1 ms-3">User Experience Design</div>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <div class="flex-shrink-0">
+              <img src="multimedia/strategy-icon1.png" alt="Strategy">
+            </div>
+            <div class="flex-grow-1 ms-3">Visual Brand Strategy</div>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <div class="flex-shrink-0">
+              <img src="multimedia/audit-icon1.png" alt="Audit">
+            </div>
+            <div class="flex-grow-1 ms-3">UX Audit</div>
+          </div>
+    </article>
+
+    <article class="d-flex flex-column mb-3">
+        <h2>Works</h2>
+        <p>In the past, I’ve worked with:</p>
+
+    <section>
+        <div class="card" style="width: 18rem;">
+        <img src="multimedia/RWK.png" class="card-img-top" alt="RWK">
+        <div class="card-body">
+          <p class="card-text">How we adopted the mechanics of dating and leasing for a booking app</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="multimedia/HC.png" class="card-img-top" alt="HC">
+        <div class="card-body">
+          <p class="card-text">Making Online Shopping Easier and Rewarding for Filipinos</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="multimedia/Obstacle-AI.png" class="card-img-top" alt="Obstacle-AI">
+        <div class="card-body">
+          <p class="card-text">A multi-level goal tracking platform from zero to a hundred</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="multimedia/MP.png" class="card-img-top" alt="MP">
+        <div class="card-body">
+          <p class="card-text">How we improved the usual vehicle inspection and valuations process</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-container" role="contentinfo"> <!-- This is the Footer Section-->
+        <p>&#169; 2024 Dax Kareem Doctora, All rights reserved</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/example"><img src="multimedia/icon-fb.png" alt="facebook"></a>
+            <a href="https://twitter.com/example"><img src="multimedia/icon-twitter.png" alt="twitter"></a>
+            <a href="https://www.instagram.com/example"><img src="multimedia/icon-insta.png" alt="instagram"></a>
+            <a href="https://www.whatsapp.com/in/example"><img src="multimedia/icon-whatsapp.png" alt="whatsapp"></a>
+        </div>
+    </footer>
 
 </body>
 </html>
